@@ -13,7 +13,7 @@ contract ctThongTinSinhVien{
 
     //không duyệt qua được từng mảng của struct nên phải lưu vào array
     address[] public arrThongTinSinhVien;
-    //Nếu trùng address thì nó sẽ update giá trị!
+    //Lưu 1 mảng cấu trúc data Struct vào trong 1 address (có thể mà thông tin số dư tài khoản, coin nắm giữ ...)
     function themSinhVien(address _address,uint _mssv,string memory _hoten, uint _namsinh) public{
         tblThongTinSinhVien storage ttsv = mpThongTinSinhVien[_address];
         ttsv.mssv=_mssv;
