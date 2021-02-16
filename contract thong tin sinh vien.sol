@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity >=0.7.0 <0.8.0;
 contract ctThongTinSinhVien{
     uint public dem=0;
     struct tblThongTinSinhVien{
